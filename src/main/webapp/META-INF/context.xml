@@ -1,0 +1,14 @@
+<Context>
+    <!-- Specify a JDBC datasource -->
+    <Resource
+            name="jdbc/student"
+            auth="Container"
+            type="javax.sql.DataSource"
+            username="root"
+            password="root"
+            driverClassName="com.mysql.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/student"
+            maxActive="10"
+            maxTotal="100"
+            maxIdle="30"/>
+</Context>
